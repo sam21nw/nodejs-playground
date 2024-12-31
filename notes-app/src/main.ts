@@ -4,6 +4,8 @@ import { randomUUID } from 'crypto';
 
 yargs.version("1.1.0");
 
+console.log("Hello world");
+
 // add command
 yargs.command({
     command: "add",

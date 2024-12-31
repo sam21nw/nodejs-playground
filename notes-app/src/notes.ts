@@ -30,9 +30,11 @@ const getNotes = (): void => {
 
 const addNote = (note: Note): void => {
     const notes: Note[] = loadNotes();
-    const duplicateNotes = notes.filter((n: Note) => n.title === note.title);
+    const duplicateNote = notes.find(n => n.title === note.title);
 
-    if (duplicateNotes.length === 0) {
+    debugger;
+
+    if (!duplicateNote) {
         notes.push(note);
         saveNotes(notes);
 
@@ -56,8 +58,8 @@ const removeNote = (command: string): void => {
 
 const readNote = (command: string): void => {
     const notes: Note[] = loadNotes();
-    const noteToRead = notes.filter(note => note.title === command);
-    if (noteToRead.length == 0) {
+    const noteToRead = notes.find(note => note.title === command);
+    if (!noteToRead) {
         console.warn("No note to read with the provided title");
     } else {
         console.log(noteToRead);
