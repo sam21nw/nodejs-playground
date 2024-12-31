@@ -3,13 +3,14 @@
 		"dev": "ts-node-dev --respawn"
 	},
 	"dependencies": {
-		"typescript": "^5.7.2",
-		"yargs": "^17.7.2"
+		"@types/node": "^22.10.2",
+		"typescript": "^5.7.2"
 	},
 	"packageManager": "pnpm@9.15.2+sha512.93e57b0126f0df74ce6bff29680394c0ba54ec47246b9cf321f0121d8d9bb03f750a705f24edc3c1180853afd7c2c3b94196d0a3d53d3e069d9e2793ef11f321",
 	"devDependencies": {
-		"@types/node": "^22.10.2",
-		"@types/yargs": "^17.0.33",
-		"ts-node-dev": "^2.0.0"
+		"fs": "0.0.1-security",
+		"ts-node": "^10.9.2",
+		"ts-node-dev": "^2.0.0",
+		"validator": "^13.12.0"
 	}
 }
