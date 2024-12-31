@@ -1,15 +1,19 @@
 {
 	"scripts": {
-		"dev": "ts-node-dev --respawn"
+		"dev": "ts-node-dev --respawn --transpile-only ./src/main.ts"
 	},
 	"dependencies": {
+		"@types/uuid": "^10.0.0",
+		"fs-extra": "11.2.0",
 		"typescript": "^5.7.2",
+		"uuid": "^11.0.3",
 		"yargs": "^17.7.2"
 	},
-	"packageManager": "pnpm@9.15.2+sha512.93e57b0126f0df74ce6bff29680394c0ba54ec47246b9cf321f0121d8d9bb03f750a705f24edc3c1180853afd7c2c3b94196d0a3d53d3e069d9e2793ef11f321",
 	"devDependencies": {
+		"@types/fs-extra": "^11.0.4",
 		"@types/node": "^22.10.2",
 		"@types/yargs": "^17.0.33",
 		"ts-node-dev": "^2.0.0"
-	}
+	},
+	"packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
