@@ -1,0 +1,1 @@
+{"root":["./src/app.ts","./src/config/config.ts","./src/config/logging.ts","./src/middleware/corshandler.ts","./src/middleware/logginghandler.ts","./src/middleware/routenotfound.ts"],"version":"5.7.2"}

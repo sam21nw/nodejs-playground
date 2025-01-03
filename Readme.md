@@ -2,7 +2,7 @@
 
 
 ### open weather map
-(https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&exclude=hourly,daily&appid={KEY})
+(https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${KEY}&units=metric)
 
 ### visual crossing
 (https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/oslo?unitGroup=metric&key=YOUR_API_KEY&contentType=json)

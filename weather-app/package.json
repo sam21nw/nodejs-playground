@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node --require dotenv/config --import=tsx --watch ./src/app.ts"
+    "dev:server": "node --require dotenv/config --import=tsx --watch ./api/server.ts",
+    "dev:app": "node --require dotenv/config --import=tsx --watch ./src/app.ts"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +14,12 @@
   "dependencies": {
     "@types/node": "^22.10.2",
     "dotenv": "^16.4.7",
+    "express": "^4.21.2",
     "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
     "typescript": "^5.7.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0"
   }
 }
